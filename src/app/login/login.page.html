@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true" color="danger">
+  <div class="container">
+    <ion-grid fixed>
+      <ion-row class="ion-justify-content-center">
+        <ion-col size="11" size-lg="6" size-xl="4">
+          <form [formGroup]="signInForm" (ngSubmit)="onSubmit(signInForm)">
+            <ion-item class="form">
+              <ion-label position="floating">Digute su email</ion-label>
+              <ion-input type="email" autofocus="true" formControlName="email"></ion-input>
+            </ion-item>
+            <ion-item class="form">
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input type="password" formControlName="password"></ion-input>
+            </ion-item>
+            <div class="ion-padding-vertical">
+              <ion-button type="submit" [disabled]="signInForm.invalid" expand="block" fill="outline" color="light">Accesar</ion-button>
+            </div>
+          </form>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

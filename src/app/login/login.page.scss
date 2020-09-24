@@ -1,0 +1,23 @@
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    --background: none;
+    --padding-start: 0;
+    ion-label{
+        font-size: 24px;
+        font-weight: 600;
+        --color: #fafafa;
+    }
+    ion-input{ 
+        --background: none;
+        --min-heigth: 60px;
+        font-size: 25px;
+        text-align: center;
+        --color: #fff;
+    }
+}
